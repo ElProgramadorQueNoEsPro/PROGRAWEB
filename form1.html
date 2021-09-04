@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+
+<head>
+    <title>..::Mi Primer Formulario::..</div></title>
+    <meta charset="UTF-8"/> 
+    <!--    
+        Juegos de caracteres : UTF-8, UTF-16, ISO-8859-1, Latin
+    -->  
+    <meta name="description" content="Mi primera pagina web"/>
+    <meta name="keywords" content="programacion ,web,ulima,ciis"/>
+    <link rel="icon" href="logo1.ico" type="image/vnd.microsoft.icon" size="32x32" />
+</head>
+
+<body>
+       <p>
+           <label>Nombre: 
+    <form action="xyz" method="POST" id="MyForm">
+    <input type="text" size="25" maxlength="80" name="nombre"/>
+            </label>
+        </p>
+        <p>
+            <input type="hidden" name="destino" value="helpcis@ulima.edu.pe"/>
+            <input type="hidden" name="asunto" value="Ayuda auxilio"/>
+            <input type="hidden" name="copia" value="rapido pue"/>
+        </p>
+        <p>
+            <label>Email:
+                <input type="password" size="25" name="correo"/>
+
+            </label>
+            <p>
+                <label>Comentarios:
+                    <textarea name="Comentarios" rows="4" cols="40">Ingresa tus opiniones</textarea>
+                </label>
+            </p>
+            <p></p>
+                <strong>Los cursos que me gustan son</strong>
+                <label>
+                    Introduccion a la programacion
+                    <input type="checkbox" value="c1" name="cursos"/>
+                </label>
+                <label>
+                    POO
+                    <input type="checkbox" value="c2" name="cursos"/>
+                </label>
+                <label>
+                    Lenguajes de programacion
+                    <input type="checkbox" value="c3" name="cursos"/>
+                </label>
+                <label>
+                    Programacion de Videojuegos
+                    <input type="checkbox" value="c4" name="cursos"/>
+                </label>
+            </p>
+            <p>
+                <strong> En que rama te gustaria programar?</strong>
+                <label> Redes
+                    <input type="radio" name="practicas" value="p1"/>
+                </label>
+                <label> Software
+                    <input type="radio" name="practicas" value="p2" checked/>
+                </label>
+                <label> TI
+                    <input type="radio" name="practicas" value="p3"/>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    En la escala del 1 al 5 ¿Cuanto te gusta la carrera?
+                    <select name ="escala">
+                        <option value="5">muchisimo</option>
+                        <option value="4">mucho</option>
+                        <option value="3" selected>masomenos</option>
+                        <option value="2">casi nada</option>
+                        <option value="1">nada</option>
+                    </select>
+                </label>
+            </p>
+        </p>
+    <input type="submit" value="Enviar"/>
+    <input type="reset" value="Limpiar"/>
+    </form>
+</body>
+</html>
